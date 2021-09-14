@@ -9,7 +9,7 @@ function App() {
       <input type="text"></input>
       <button>Add ToDo</button>
       <button>Clear Completed ToDoList</button>
-      <div>0 left to do</div>
+      <div>0 remaining</div>
     </>
   );
 }
