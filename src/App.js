@@ -1,5 +1,6 @@
 import ToDoList from './ToDoList';
 import { useState, useRef } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
   const [todos, setTodos] = useState([])
@@ -12,7 +13,7 @@ function App() {
     
     // Setting the Todos, take previous todos, spread operator on array
     setTodos(prevTodos => {
-      return [...prevTodos, { id:1, name: name, complete: false}]
+      return [...prevTodos, { id: uuidv4(), name: name, complete: false}]
     })
     
     // clear the input field by resetting the value to null
